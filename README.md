@@ -36,7 +36,6 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_json_is_array '/users'
     assert_json_array_size 10, '/users'
     assert_json_equal 123, '/users/0/id'
-    assert_json_equal 123, '/users/0/id'
     assert_json_has '/users/0/created_at'
     assert_json_equal "John Doe", '/users/0/name'
   
